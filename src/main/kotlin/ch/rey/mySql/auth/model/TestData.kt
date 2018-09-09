@@ -1,6 +1,5 @@
 package ch.rey.mySql.auth.model
 
-import jdk.nashorn.internal.objects.annotations.Getter
 import javax.persistence.Entity
 import javax.persistence.GeneratedValue
 import javax.persistence.GenerationType
@@ -11,7 +10,7 @@ import javax.validation.constraints.NotBlank
 @Entity
 class TestData (
         @Id
-        @GeneratedValue(strategy = GenerationType.TABLE)
+        @GeneratedValue(strategy = GenerationType.AUTO)
         val id: Long = 0,
 
 
