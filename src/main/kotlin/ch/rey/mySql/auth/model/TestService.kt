@@ -15,4 +15,9 @@ class TestService(@Autowired val repository: ITestRepository) {
     fun getAllTestData():List<TestData>{
         return repository.findAll().toList()
     }
+
+    fun updateData(testData: TestData):TestData{
+        repository.save(testData)
+        return testData
+    }
 }
