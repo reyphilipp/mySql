@@ -10,7 +10,8 @@ import javax.validation.constraints.NotBlank
 @Entity
 class TestData (
         @Id
-        @GeneratedValue(strategy = GenerationType.AUTO)
+        //@GeneratedValue(strategy = GenerationType.AUTO)
+        @GeneratedValue(strategy = GenerationType.TABLE)
         val id: Long = 0,
 
 
